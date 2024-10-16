@@ -1,0 +1,69 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Arka plan siyah */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .calculator {
+    width: 320px;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  
+  .display {
+    width: 100%;
+    height: 60px;
+    background-color: #222;
+    color: white;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .btn {
+    background-color: #444;
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  .equals {
+    background-color: #28a745;
+    grid-column: span 2;
+  }
+  
+  .equals:hover {
+    background-color: #218838;
+  }
+  
+  button:active {
+    background-color: #777;
+  }
+  
